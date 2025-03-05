@@ -59,7 +59,7 @@ const activeFilter = document.querySelectorAll(".filter button");
 let isFull = false;
 
 function getData(callback, isFull, name) {
-  fetch("/assets/src/products.json")
+  fetch("./assets/src/products.json")
     .then((res) => res.json())
     .then((data) => {
       const productArray = isFull ? data : data.slice(0, 4);
