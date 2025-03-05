@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Document</title>
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
@@ -42,7 +42,7 @@
 				Košík
 				<div class="amount-purchase ">2</div>
 			</div>
-			<button><svg class="burger-menu">
+			<button class=" burger-menu-js" type="button"><svg class="burger-menu">
 					<use href="./assets/img/sprite.svg#burger-menu"></use>
 				</svg></button>
 			<div class="user-profile"><svg class="user-icon">
@@ -51,10 +51,27 @@
 		</div>
 	</header>
 	<section class="hero">
-		<div class="container wrapper-hero">
-			<span class="text-span">Lorem ipsum dolor sit</span>
-			<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-			<button class="button">Zobrazit</button>
+
+
+		<div class="swiper container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide wrapper-hero">
+					<span class="text-span">Lorem ipsum dolor sit</span>
+					<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+					<button class="button">Zobrazit</button>
+				</div>
+				<div class="swiper-slide  wrapper-hero">
+					<span class="text-span">Lorem ipsum dolor sit</span>
+					<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+					<button class="button">Zobrazit</button>
+				</div>
+				<div class="swiper-slide  wrapper-hero">
+					<span class="text-span">Lorem ipsum dolor sit</span>
+					<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+					<button class="button">Zobrazit</button>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
 		</div>
 	</section>
 	<section class="currency">
@@ -91,110 +108,21 @@
 			<div class="wrapper-offer">
 				<h2 class="subtitle">Vyberte si z naši nabídky</h2>
 				<ul class="offer-list">
-					<li class="offer-item">
-						<img class="image-funt" src="./assets/img/currency/funt.jpg" />
-						<div class="offer-overlay"><span class="text-overlay">Investiční</span>
-							<p class="suntitle-overlay">Zlaté mince</p>
-						</div>
-					</li>
-					<li class="offer-item">
-						<img class="image-funt" src="./assets/img/currency/coin.jpg" />
-						<div class="offer-overlay"><span class="text-overlay">Investiční</span>
-							<h2 class="suntitle-overlay">Zlaté mince</h2>
-						</div>
-					</li>
-					<!-- <li class="offer-item">
-						<img src="./assets/img/currency/gold-1.jpg" />
-						<div class="offer-overlay"><span class="text-overlay">Investiční</span>
-							<h2 class="suntitle-overlay">Zlaté mince</h2>
-						</div>
-					</li>
-					<li class="offer-item">
-						<img src="./assets/img/currency/hryvnia.jpg" />
-						<div class="offer-overlay"><span class="text-overlay">Investiční</span>
-							<h2 class="suntitle-overlay">Zlaté mince</h2>
-						</div>
-					</li> -->
 				</ul>
-				<button class="button-offer">Zobrazit více <svg>
+				<button class="button-show">Zobrazit více <svg>
 						<use href="./assets/img/sprite.svg#arrow-right"></use>
 					</svg></button>
 
 
 			</div>
 			<div class="filter">
-				<p>Novinky</p>
-				<p>Nejprodávanější</p>
-				<p>Doporučené</p>
+				<button class="button" type="button" value="Novinky">Novinky</button>
+				<button class="button" type="button" value="Nejprodávanější">Nejprodávanější</button>
+				<button class="button" type="button" value="Doporučené">Doporučené</button>
 			</div>
-			<!-- <ul class="product-list">
-				<li class="product-item">
-					<img src="./assets/img/product3.jpg" alt="product-info" />
-					<div class="product-info">
-						<p class="product-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						<div class="thumb">
-							<div>
-								<p class="product">Skladem</p>
-								<span class="">1 000 Kč</span>
-							</div>
-							<button class="button-shopping-cart">
-								<svg class="icon-shopping-cart">
-									<use href="./assets/img/sprite.svg#shopping-cart"></use>
-								</svg>
-							</button>
-						</div>
-				</li>
-				<li class="product-item">
-					<img src="./assets/img/product3.jpg" alt="product-info" />
-					<div class="product-info">
-						<p class="product-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						<div class="thumb">
-							<div>
-								<p class="product">Skladem</p>
-								<span class="">1 000 Kč</span>
-							</div>
-							<button class="button-shopping-cart">
-								<svg class="icon-shopping-cart">
-									<use href="./assets/img/sprite.svg#shopping-cart"></use>
-								</svg>
-							</button>
-						</div>
-				</li>
-				<li class="product-item">
-					<img src="./assets/img/product3.jpg" alt="product-info" />
-					<div class="product-info">
-						<p class="product-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						<div class="thumb">
-							<div>
-								<p class="product">Skladem</p>
-								<span class="">1 000 Kč</span>
-							</div>
-							<button class="button-shopping-cart">
-								<svg class="icon-shopping-cart">
-									<use href="./assets/img/sprite.svg#shopping-cart"></use>
-								</svg>
-							</button>
-						</div>
-				</li>
-
-				<li class="product-item">
-					<img src="./assets/img/product3.jpg" alt="product-info" />
-					<div class="product-info">
-						<p class="product-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						<div class="thumb">
-							<div>
-								<p class="product">Skladem</p>
-								<span class="">1 000 Kč</span>
-							</div>
-							<button class="button-shopping-cart">
-								<svg class="icon-shopping-cart">
-									<use href="./assets/img/sprite.svg#shopping-cart"></use>
-								</svg>
-							</button>
-						</div>
-				</li>
-			</ul> -->
-			<button class="button">Zobrazit více produktů</button>
+			<ul class="product-list">
+			</ul>
+			<button type="button" class="button-show-more button-js">Zobrazit více produktů</button>
 
 		</div>
 	</section>
@@ -202,45 +130,15 @@
 	<section class="section-blog">
 		<div class="container">
 			<h2 class="title-blog">Přečtěte si z našeho blogu</h2>
-			<ul class="blog-list">
-				<li class="blog-list-item">
-					<img src="./assets/img/blog/bill.png" />
-					<div class="wrapper-blog">
-						<span class="date">20.12.2021</span>
-						<h3 class="subtitle-blog">Lorem Ipsum</h3>
-						<p class="name-user"> <svg class="user-icon icon-user">
-								<use href="./assets/img/sprite.svg#user-icon"></use>
-							</svg>Lukáš I 0 Coments</p>
-
-					</div>
-				</li>
-				<li class="blog-list-item"><img src="./assets/img/blog/chart.png" />
-					<div class="wrapper-blog">
-						<span class="date">20.12.2021</span>
-						<h3 class="subtitle-blog">Lorem Ipsum</h3>
-						<p class="name-user"> <svg class="user-icon icon-user">
-								<use href="./assets/img/sprite.svg#user-icon"></use>
-							</svg>Lukáš I 0 Coments</p>
-
-					</div>
-				</li>
-				<li class="blog-list-item"><img src="./assets/img/blog/piggy-bank.png" />
-					<div class="wrapper-blog">
-						<span class="date">20.12.2021</span>
-						<h3 class="subtitle-blog">Lorem Ipsum</h3>
-						<p class="name-user"><svg class="user-icon icon-user">
-								<use href="./assets/img/sprite.svg#user-icon"></use>
-							</svg>Lukáš I 0 Coments</p>
-
-					</div>
-				</li>
-				<li></li>
-				<button class="button-offer">Zobrazit více <svg>
+			<div class="wrapper-blog-list">
+				<ul class="blog-list">
+				</ul>
+				<button class="button-show">Zobrazit více <svg>
 						<use href="./assets/img/sprite.svg#arrow-right"></use>
 					</svg></button>
-			</ul>
-
+			</div>
 		</div>
+
 	</section>
 
 	<section class="section-advantages">
@@ -358,8 +256,46 @@
 
 		</div>
 	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script type="module" src="./assets/src/js/swiper.js" defer></script>
+	<script type="module" src="./assets/src/js/blog.js" defer></script>
+	<script type="module" src="./assets/src/js/offer.js" defer></script>
+	<script type="module" src="./assets/src/js/products.js" defer></script>
+	<script type="module" src="./assets/src/js/burger-menu.js" defer></script>
+	<div class="burger-menu-modal">
+		<div class="burger-container">
+			<button class="close close-js"><svg width="24" heigth="24">
+					<use href="./assets/img/sprite.svg#close"></use>
+				</svg></button>
+			<nav class="burger-nav">
+				<ul class="burger-list">
+					<li> <select class="select-product">
+							<option>Produkty</option>
 
-	<script type="mode" src="./assets/src/js/index.js"></script>
+						</select></li>
+					<li><a href="/">Akční nabídka</a></li>
+					<li><a href="/">O nás</a></li>
+					<li><a href="/">Kontakt</a></li>
+				</ul>
+			</nav>
+
+
+			<select class="select-language display">
+				<option>CZK</option>
+				<option>EN</option>
+			</select>
+
+			<div class="user-profile display">
+				<svg class="user-icon">
+					<use href="./assets/img/sprite.svg#user-icon"></use>
+				</svg>
+			</div>
+
+		</div>
+
+
+	</div>
+	</div>
 </body>
 
 </html>
