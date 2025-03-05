@@ -14,7 +14,7 @@
 	<header>
 		<div class="container header-wrapper">
 			<a href="/" class="logo">
-				<p>LOGO</p>
+				LOGO
 			</a>
 			<nav class="nav">
 				<ul class="nav-list">
@@ -127,7 +127,7 @@
 				<p>Nejprodávanější</p>
 				<p>Doporučené</p>
 			</div>
-			<ul class="product-list">
+			<!-- <ul class="product-list">
 				<li class="product-item">
 					<img src="./assets/img/product3.jpg" alt="product-info" />
 					<div class="product-info">
@@ -193,7 +193,7 @@
 							</button>
 						</div>
 				</li>
-			</ul>
+			</ul> -->
 			<button class="button">Zobrazit více produktů</button>
 
 		</div>
@@ -201,11 +201,165 @@
 
 	<section class="section-blog">
 		<div class="container">
-			<h2>Přečtěte si z našeho blogu</h2>
+			<h2 class="title-blog">Přečtěte si z našeho blogu</h2>
+			<ul class="blog-list">
+				<li class="blog-list-item">
+					<img src="./assets/img/blog/bill.png" />
+					<div class="wrapper-blog">
+						<span class="date">20.12.2021</span>
+						<h3 class="subtitle-blog">Lorem Ipsum</h3>
+						<p class="name-user"> <svg class="user-icon icon-user">
+								<use href="./assets/img/sprite.svg#user-icon"></use>
+							</svg>Lukáš I 0 Coments</p>
+
+					</div>
+				</li>
+				<li class="blog-list-item"><img src="./assets/img/blog/chart.png" />
+					<div class="wrapper-blog">
+						<span class="date">20.12.2021</span>
+						<h3 class="subtitle-blog">Lorem Ipsum</h3>
+						<p class="name-user"> <svg class="user-icon icon-user">
+								<use href="./assets/img/sprite.svg#user-icon"></use>
+							</svg>Lukáš I 0 Coments</p>
+
+					</div>
+				</li>
+				<li class="blog-list-item"><img src="./assets/img/blog/piggy-bank.png" />
+					<div class="wrapper-blog">
+						<span class="date">20.12.2021</span>
+						<h3 class="subtitle-blog">Lorem Ipsum</h3>
+						<p class="name-user"><svg class="user-icon icon-user">
+								<use href="./assets/img/sprite.svg#user-icon"></use>
+							</svg>Lukáš I 0 Coments</p>
+
+					</div>
+				</li>
+				<li></li>
+				<button class="button-offer">Zobrazit více <svg>
+						<use href="./assets/img/sprite.svg#arrow-right"></use>
+					</svg></button>
+			</ul>
+
 		</div>
 	</section>
 
-	<script type="mode" href="/assets/src/js/index.js"></script>
+	<section class="section-advantages">
+		<div class="container">
+			<ul class="advantages-list">
+				<li class="advantages-item">
+					<img src="./assets/img/decorations/car.png" />
+					<p>Doprava zdarma na vše od 5 000 Kč</p>
+				</li>
+				<li class="advantages-item">
+					<img src="./assets/img/decorations/Transaction.png" />
+					<p>Okamžitá fixace cen do 150 000 Kč</p>
+				</li>
+				<li class="advantages-item">
+					<img src="./assets/img/decorations/qr-code.png" />
+					<p>Možnost platbypomocí QR kódu</p>
+				</li>
+				<li class="advantages-item">
+					<img src="./assets/img/decorations/bank.png" />
+					<p>Vykupujeme historickéi novodobé mince</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="section-contact">
+		<div class="container">
+			<h2 class="title-contact">Zůstaňtě s námi v kontaktu</h2>
+			<form class="form" action="" method="post">
+				<label class="label" for="email">
+					<input class="input" type="email" name="email" id="email" placeholder="@Zadej svuj email" />
+					<button type="submit" class="button-submit">Odoslať <svg>
+							<use href="./assets/img/sprite.svg#arrow-right"></use>
+						</svg></button>
+				</label>
+
+			</form>
+
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<a href="/" class="footer-logo">
+				LOGO
+			</a>
+			<div class="wrapper-contact">
+				<div class="footer-nav">
+					<h4 class="subtitle-nav">Jak nakoupit</h4>
+					<ul class="footer-list">
+						<li class="footer-item"><a href="">Platební podmínky</a></li>
+						<li class="footer-item"><a href="">Fixační podmínky</a></li>
+						<li class="footer-item"><a href="">Dodací a skladovací podmínky</a></li>
+						<li class="footer-item"><a href="">Obchodní podmínky</a></li>
+						<li class="footer-item"><a href="">Ochrana osobních údajů</a></li>
+						<li class="footer-item"><a href="">Reklamace</a></li>
+					</ul>
+				</div>
+				<div class="footer-nav">
+					<h4 class="subtitle-nav">Vaše objednávky</h4>
+					<ul class="footer-list">
+						<li class="footer-item"><a href="">Stav objednávky</a></li>
+						<li class="footer-item"><a href="">Stav poštovní zásilky</a></li>
+						<li class="footer-item"><a href="">Přehled služeb a benefitů
+							</a></li>
+						<li class="footer-item"><a href="">Výkupní podmínky</a></li>
+						<li class="footer-item"><a href="">Nejčastější dotazy</a></li>
+						<li class="footer-item"><a href="">Grafy investičních kovů</a></li>
+					</ul>
+				</div>
+				<div class="footer-nav">
+					<h4 class="subtitle-nav">O společnosti</h4>
+					<ul class="footer-list">
+						<li class="footer-item"><a href="">Základní informace</a></li>
+						<li class="footer-item"><a href="">Pobočky</a></li>
+						<li class="footer-item"><a href="">Kontakty</a></li>
+						<li class="footer-item"><a href="">Partneři</a></li>
+						<li class="footer-item"><a href="">Blog</a></li>
+						<li class="footer-item"><a href="">Kariéra</a></li>
+					</ul>
+				</div>
+				<div class="footer-contact">
+					<h4 class="subtitle-nav">Kontakt</h4>
+
+					<div class="footer-social-media">
+						<a href=""><svg width="24" height="24">
+								<use href="./assets/img/sprite.svg#instagram"></use>
+							</svg></a>
+						<a href=""><svg width="24" height="24">
+								<use href="./assets/img/sprite.svg#facebook"></use>
+							</svg></a>
+					</div>
+					<ul class="footer-list-contact">
+						<li class="footer-item">
+
+							<a class="footer-contact-item" href="tel:+420 123 456 789"> <svg width="24" height="24">
+									<use href="./assets/img/sprite.svg#phone"></use>
+								</svg>+420 123 456 789</a>
+						</li>
+						<li class="footer-item">
+
+							<a class="footer-contact-item" href="mailto:info@constantinvest.com"> <svg width="24"
+									height="24">
+									<use href="./assets/img/sprite.svg#email"></use>
+								</svg>info@constantinvest.com</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper-text">
+				<p class="footer-text">Copyright 2021 Constant Invest</p>
+				<p class="company">vytvoril Shoptet | <img class="logo-miranda"
+						src="./assets/img/logo-miranda-media.png" width="23" height="19" alt="logo miranda media" />
+					MirandaMedia Group, s.r.o.</p>
+			</div>
+
+
+		</div>
+	</footer>
+
+	<script type="mode" src="./assets/src/js/index.js"></script>
 </body>
 
 </html>

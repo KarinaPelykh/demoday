@@ -1,1 +1,2 @@
-// console.log("Hello, world!");
+"strict mode";
+console.log("Hello, world!");
