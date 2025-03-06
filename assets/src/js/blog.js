@@ -1,4 +1,3 @@
-// "use strict"
 (function () {
 const blogList = document.querySelector(".blog-list");
 
@@ -26,7 +25,7 @@ function handleMarkup(image) {
   li.classList.add("blog-list-item");
 
   li.innerHTML = `
-    <img src='${image}' />
+    <img src='${image}' alt="picture of money" />
     <div class="wrapper-blog overlay-block">
       <div>
         <span class="date">20.12.2021</span>

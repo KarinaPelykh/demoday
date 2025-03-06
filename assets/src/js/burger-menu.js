@@ -1,6 +1,8 @@
 "use strict"
 const burgerMenu = document.querySelector(".burger-menu-js");
+
 const modal = document.querySelector(".burger-menu-modal");
+
 const close = document.querySelector(".close-js");
 
 burgerMenu.addEventListener("click", () => {

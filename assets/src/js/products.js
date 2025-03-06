@@ -2,23 +2,12 @@
 function card(data) {
   const { title, imgSrc, flags = [], availability, price } = data;
 
-  let isAvailable = "#63da46";
-
-  switch (availability) {
-    case "Skladem":
-      isAvailable = "#63da46";
-      break;
-    case "Momentálně nedostupné":
-      isAvailable = "#f24d4d";
-      break;
-    case "Na objednávku":
-      isAvailable = "#e9e9e9";
-      break;
-
-    default:
-      isAvailable;
-      break;
+  const statusColor = {
+    "Skladem": "#63da46",
+    "Momentálně nedostupné":"#f24d4d",
+    "Na objednávku":"#979797"
   }
+  let isAvailable = statusColor[availability] ||  "#63da46";
 
   return `
     <img src=".${imgSrc}" alt="${title}"/>
