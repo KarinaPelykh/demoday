@@ -20,7 +20,7 @@ function card(data) {
   }
 
   return `
-    <img src="${imgSrc}" alt="${title}"/>
+    <img src=".${imgSrc}" alt="${title}"/>
     <div class="product-info">
       <p class="product-title">${title}</p>
       <div class="thumb">
@@ -56,19 +56,22 @@ const buttonShowMore = document.querySelector(".button-js");
 const filter = document.querySelector(".filter");
 const activeFilter = document.querySelectorAll(".filter button");
 
+const KEY_PRODUCT ="product";
+
 let isFull = false;
 
-function getData(callback, isFull, name) {
+let currentCategory="Novinky"
+
+function getData(callback,isFull, name=currentCategory ,) {
   fetch("./assets/src/products.json")
     .then((res) => res.json())
     .then((data) => {
-      const productArray = isFull ? data : data.slice(0, 4);
-      callback(productArray, name);
+      callback(data, name, isFull) 
     })
     .catch((error) => console.log(error.message));
 }
 
-getData(productCard, isFull);
+getData(filterProduct, isFull);
 
 function productCard(data) {
   productList.innerHTML = "";
@@ -85,29 +88,43 @@ function productCard(data) {
 }
 
 buttonShowMore.addEventListener("click", () => {
-  getData(productCard, !isFull);
+
+  getData(filterProduct, !isFull,currentCategory);
 
   buttonShowMore.style.display = "none";
 });
 
 //filter
 filter.addEventListener("click", (e) => {
-  buttonShowMore.style.display = "none";
-
   if (e.target.nodeName !== "BUTTON") return;
 
-  getData(filterProduct, !isFull, e.target.value);
+  currentCategory=e.target.value
+
+  getData(filterProduct, isFull , currentCategory);
+
+  buttonShowMore.style.display = "flex";
+ 
 });
 
-function filterProduct(data, name) {
-  const filteredData = data?.filter(({ category }) => name === category);
+function filterProduct(data, name,isFull) {
 
-  productCard(filteredData);
+const filteredData = data?.filter(({ category }) => name === category);
+  
+localStorage.setItem(KEY_PRODUCT,JSON.stringify(filteredData))
+
+const savedData= localStorage.getItem(KEY_PRODUCT)
+
+const productArray = isFull ? JSON.parse(savedData) : JSON.parse(savedData).slice(0, 4);
+
+productCard(productArray,name);
 }
 
 activeFilter.forEach((button) => {
+
   button.addEventListener("click", () => {
+
     activeFilter.forEach((btn) => btn.classList.remove("active"));
+
     button.classList.add("active");
   });
 });
