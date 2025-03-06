@@ -1,3 +1,5 @@
+// "use strict"
+(function () {
 const blogList = document.querySelector(".blog-list");
 
 let currentAmountImages = [];
@@ -60,3 +62,4 @@ function updateImages() {
 window.addEventListener("resize", updateImages);
 
 updateImages();
+})();

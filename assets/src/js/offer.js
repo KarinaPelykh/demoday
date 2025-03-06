@@ -1,3 +1,5 @@
+
+(function () {
 const offerList = document.querySelector(".offer-list");
 
 const images = [
@@ -78,3 +80,4 @@ function updateImages() {
 window.addEventListener("resize", updateImages);
 
 updateImages();
+})();

@@ -1,3 +1,4 @@
+"use strict"
 function card(data) {
   const { title, imgSrc, flags = [], availability, price } = data;
 
