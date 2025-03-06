@@ -3,11 +3,11 @@ const blogList = document.querySelector(".blog-list");
 let currentAmountImages = [];
 
 const images = [
-  "./assets/img/blog/bill.png",
-  "./assets/img/blog/chart.png",
-  "./assets/img/blog/piggy-bank.png",
-  "./assets/img/blog/watering.png",
-  "./assets/img/blog/sum.png",
+  "./assets/img/blog/bill@2x.avif",
+  "./assets/img/blog/chart@2x.avif",
+  "./assets/img/blog/piggy-bank@2x.avif",
+  "./assets/img/blog/watering@2x.avif",
+  "./assets/img/blog/sum@2x.avif",
 ];
 
 function renderImages() {

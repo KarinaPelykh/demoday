@@ -2,22 +2,22 @@ const offerList = document.querySelector(".offer-list");
 
 const images = [
   {
-    img: "./assets/img/currency/funt.jpg",
+    img: "./assets/img/currency/pound@2x.avif",
     name: "Zlaté mince",
     type: "Investiční",
   },
   {
-    img: "./assets/img/currency/coin.jpg",
+    img: "./assets/img/currency/coin@2x.avif",
     name: "Zlaté slitky",
     type: "Investiční",
   },
   {
-    img: "./assets/img/currency/gold-1.jpg",
+    img: "./assets/img/currency/gold_1@2x.avif",
     name: "Zlaté mince",
     type: "historické",
   },
   {
-    img: "./assets/img/currency/hryvnia.jpg",
+    img: "./assets/img/currency/hryvnia@2x.avif",
     name: "Zlaté mince ČNB",
     type: "Pamětní",
   },
@@ -37,7 +37,7 @@ function handleMarkup(data) {
     <div class="overlay-block offer-overlay">
        <div>
         <span class="text-overlay">${type}</span>
-       <p class="suntitle-overlay">${name}</p>
+       <p class="subtitle-overlay">${name}</p>
        </div>
     <button class="button-overlay">
     <svg>

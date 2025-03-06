@@ -5,13 +5,15 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
+	<link rel="icon" type="image/svg+xml" href="./assets/img/logo-miranda-media.png" />
+	<title>DemoDay</title>
+	<link />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-	<header>
+	<header class="header">
 		<div class="container header-wrapper">
 			<a href="/" class="logo">
 				LOGO
@@ -20,16 +22,15 @@
 				<ul class="nav-list">
 					<li> <select class="select-product">
 							<option>Produkty</option>
-
 						</select></li>
-					<li><a href="/">Akční nabídka</a></li>
-					<li><a href="/">O nás</a></li>
-					<li><a href="/">Kontakt</a></li>
+					<li><a class="header-link" href="/">Akční nabídka</a></li>
+					<li><a  class="header-link" href="/">O nás</a></li>
+					<li><a  class="header-link" href="/">Kontakt</a></li>
 				</ul>
 			</nav>
 			<div class="wrapper-search">
-				<input class="input-search" type="text" placeholder="Napište, co hledáte" />
-				<button class="button-search"><svg class="search-icon">
+				<input class="input-search" type="text" name="search" placeholder="Napište, co hledáte" />
+				<button type="button" class="button-search"><svg class="search-icon">
 						<use href="./assets/img/sprite.svg#search"></use>
 					</svg></button>
 			</div>
@@ -42,33 +43,31 @@
 				Košík
 				<div class="amount-purchase ">2</div>
 			</div>
-			<button class=" burger-menu-js" type="button"><svg class="burger-menu">
+			<button class="burger-menu-js" type="button"><svg class="burger-menu">
 					<use href="./assets/img/sprite.svg#burger-menu"></use>
 				</svg></button>
-			<div class="user-profile"><svg class="user-icon">
+			<button class="user-profile"><svg class="user-icon">
 					<use href="./assets/img/sprite.svg#user-icon"></use>
-				</svg></div>
+				</svg></button>
 		</div>
 	</header>
 	<section class="hero">
-
-
 		<div class="swiper container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide wrapper-hero">
 					<span class="text-span">Lorem ipsum dolor sit</span>
 					<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-					<button class="button">Zobrazit</button>
+					<button type="button" class="button">Zobrazit</button>
 				</div>
 				<div class="swiper-slide  wrapper-hero">
 					<span class="text-span">Lorem ipsum dolor sit</span>
 					<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-					<button class="button">Zobrazit</button>
+					<button type="button" class="button">Zobrazit</button>
 				</div>
 				<div class="swiper-slide  wrapper-hero">
 					<span class="text-span">Lorem ipsum dolor sit</span>
 					<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-					<button class="button">Zobrazit</button>
+					<button type="button" class="button">Zobrazit</button>
 				</div>
 			</div>
 			<div class="swiper-pagination"></div>
@@ -78,23 +77,40 @@
 		<div class="container">
 			<ul class="currency-list">
 				<li class="item-list">
-					<img class="images-currency" src="./assets/img/currency/liber.jpg" alt="" width="" height="" />
+					<picture>
+						<source srcset="./assets/img/currency/liberty.jpg 1x, ./assets/img/currency/liberty@2x.avif  2x" type="image/jpeg" />
+						<img class="images-currency" src="./assets/img/currency/liberty.jpg" alt="liber" width="" height="" />
+					  </picture>
+				
 					<div class="text-currency">
-						<p class="title-currency">Lorem ipsum dolor sit amet, consectetur</p> <button
+						<p class="title-currency">Lorem ipsum dolor sit amet, consectetur</p> <button type="button"
 							class="button">Zobrazit</button>
 					</div>
 				</li>
-				<li class="item-list"><img class="images-currency" src="./assets/img/currency/gold.jpg" alt="" width=""
-						height="" />
+				<li class="item-list">
+					<picture>
+						<source srcset="./assets/img/currency/gold.jpg 1x, ./assets/img/currency/gold@2x.avif  2x" type="image/jpeg" />
+						<img class="images-currency" src="./assets/img/currency/gold.jpg" alt="gold" width="" height="" />
+					  </picture>
+					
+						
 					<div class="text-currency">
-						<p class="title-currency">Lorem ipsum dolor sit amet, consectetur</p> <button
+						<p class="title-currency">Lorem ipsum dolor sit amet, consectetur</p> <button type="button"
 							class="button">Zobrazit</button>
 					</div>
 				</li>
-				<li class="item-list"><img class="images-currency" src="./assets/img/currency/coin.jpg" alt="" width=""
-						height="" />
+				<li class="item-list">
+					<picture>
+						<source srcset="./assets/img/currency/coin.jpg 1x, ./assets/img/currency/coin@2x.avif  2x" type="image/jpeg" />
+							
+					<img class="images-currency" src="./assets/img/currency/coin@2x.avif" alt="coin"
+					width="" height="" />
+					  </picture>
+					
+					
+				
 					<div class="text-currency">
-						<p class="title-currency">Lorem ipsum dolor sit amet, consectetur</p> <button
+						<p class="title-currency">Lorem ipsum dolor sit amet, consectetur</p> <button type="button"
 							class="button">Zobrazit</button>
 					</div>
 				</li>
@@ -109,14 +125,14 @@
 				<h2 class="subtitle">Vyberte si z naši nabídky</h2>
 				<ul class="offer-list">
 				</ul>
-				<button class="button-show">Zobrazit více <svg>
+				<button type="button" class="button-show">Zobrazit více <svg>
 						<use href="./assets/img/sprite.svg#arrow-right"></use>
 					</svg></button>
 
 
 			</div>
 			<div class="filter">
-				<button class="button" type="button" value="Novinky">Novinky</button>
+				<button class="button active" type="button" value="Novinky">Novinky</button>
 				<button class="button" type="button" value="Nejprodávanější">Nejprodávanější</button>
 				<button class="button" type="button" value="Doporučené">Doporučené</button>
 			</div>
@@ -133,7 +149,7 @@
 			<div class="wrapper-blog-list">
 				<ul class="blog-list">
 				</ul>
-				<button class="button-show">Zobrazit více <svg>
+				<button type="button" class="button-show">Zobrazit více <svg>
 						<use href="./assets/img/sprite.svg#arrow-right"></use>
 					</svg></button>
 			</div>
@@ -145,19 +161,39 @@
 		<div class="container">
 			<ul class="advantages-list">
 				<li class="advantages-item">
-					<img src="./assets/img/decorations/car.png" />
+
+					<picture>
+						<source srcset="./assets/img/decorations/car.png 1x, ./assets/img/decorations/car@2x.avif  2x" type="image/jpeg" />
+						<img src="./assets/img/decorations/car.png" alt="decorations card" width="" height="" />
+					  </picture>
 					<p>Doprava zdarma na vše od 5 000 Kč</p>
 				</li>
 				<li class="advantages-item">
-					<img src="./assets/img/decorations/Transaction.png" />
+
+					<picture>
+						<source srcset="./assets/img/decorations/Transaction.png 1x, ./assets/img/decorations/transaction@2x.avif  2x" type="image/jpeg" />
+						<img src="./assets/img/decorations/Transaction.png" alt="decorations transaction" width=""
+						height="" />
+					  </picture>
+					
 					<p>Okamžitá fixace cen do 150 000 Kč</p>
 				</li>
 				<li class="advantages-item">
-					<img src="./assets/img/decorations/qr-code.png" />
+
+					<picture>
+						<source srcset="./assets/img/decorations/qr-code.png 1x, ./assets/img/decorations/qr-code@2x.avif  2x" type="image/jpeg" />
+						<img src="./assets/img/decorations/qr-code.png" alt="decorations decorations" width="" height="" />
+					  </picture>
+					
 					<p>Možnost platbypomocí QR kódu</p>
 				</li>
 				<li class="advantages-item">
-					<img src="./assets/img/decorations/bank.png" />
+
+					<picture>
+						<source srcset="./assets/img/decorations/bank.png 1x, ./assets/img/decorations/bank@2x.avif  2x" type="image/jpeg" />
+						<img src="./assets/img/decorations/bank.png" alt="decorations decorations" width="" height="" />
+					  </picture>
+					
 					<p>Vykupujeme historickéi novodobé mince</p>
 				</li>
 			</ul>
@@ -166,7 +202,7 @@
 	<section class="section-contact">
 		<div class="container">
 			<h2 class="title-contact">Zůstaňtě s námi v kontaktu</h2>
-			<form class="form" action="" method="post">
+			<form class="form" method="post">
 				<label class="label" for="email">
 					<input class="input" type="email" name="email" id="email" placeholder="@Zadej svuj email" />
 					<button type="submit" class="button-submit">Odoslať <svg>
@@ -187,59 +223,60 @@
 				<div class="footer-nav">
 					<h4 class="subtitle-nav">Jak nakoupit</h4>
 					<ul class="footer-list">
-						<li class="footer-item"><a href="">Platební podmínky</a></li>
-						<li class="footer-item"><a href="">Fixační podmínky</a></li>
-						<li class="footer-item"><a href="">Dodací a skladovací podmínky</a></li>
-						<li class="footer-item"><a href="">Obchodní podmínky</a></li>
-						<li class="footer-item"><a href="">Ochrana osobních údajů</a></li>
-						<li class="footer-item"><a href="">Reklamace</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Platební podmínky</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Fixační podmínky</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Dodací a skladovací podmínky</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Obchodní podmínky</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Ochrana osobních údajů</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Reklamace</a></li>
 					</ul>
 				</div>
 				<div class="footer-nav">
 					<h4 class="subtitle-nav">Vaše objednávky</h4>
 					<ul class="footer-list">
-						<li class="footer-item"><a href="">Stav objednávky</a></li>
-						<li class="footer-item"><a href="">Stav poštovní zásilky</a></li>
-						<li class="footer-item"><a href="">Přehled služeb a benefitů
+						<li class="footer-item"><a class="link-hover" href="/">Stav objednávky</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Stav poštovní zásilky</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Přehled služeb a benefitů
 							</a></li>
-						<li class="footer-item"><a href="">Výkupní podmínky</a></li>
-						<li class="footer-item"><a href="">Nejčastější dotazy</a></li>
-						<li class="footer-item"><a href="">Grafy investičních kovů</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Výkupní podmínky</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Nejčastější dotazy</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Grafy investičních kovů</a></li>
 					</ul>
 				</div>
 				<div class="footer-nav">
 					<h4 class="subtitle-nav">O společnosti</h4>
 					<ul class="footer-list">
-						<li class="footer-item"><a href="">Základní informace</a></li>
-						<li class="footer-item"><a href="">Pobočky</a></li>
-						<li class="footer-item"><a href="">Kontakty</a></li>
-						<li class="footer-item"><a href="">Partneři</a></li>
-						<li class="footer-item"><a href="">Blog</a></li>
-						<li class="footer-item"><a href="">Kariéra</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Základní informace</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Pobočky</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Kontakty</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Partneři</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Blog</a></li>
+						<li class="footer-item"><a class="link-hover" href="/">Kariéra</a></li>
 					</ul>
 				</div>
 				<div class="footer-contact">
 					<h4 class="subtitle-nav">Kontakt</h4>
 
 					<div class="footer-social-media">
-						<a href=""><svg width="24" height="24">
+						<a class="link-hover" href="/"><svg width="24" height="24">
 								<use href="./assets/img/sprite.svg#instagram"></use>
 							</svg></a>
-						<a href=""><svg width="24" height="24">
+						<a class="link-hover" href="/"><svg width="24" height="24">
 								<use href="./assets/img/sprite.svg#facebook"></use>
 							</svg></a>
 					</div>
 					<ul class="footer-list-contact">
 						<li class="footer-item">
 
-							<a class="footer-contact-item" href="tel:+420 123 456 789"> <svg width="24" height="24">
+							<a class="footer-contact-item link-hover" href="tel:+420 123 456 789"> <svg width="24"
+									height="24">
 									<use href="./assets/img/sprite.svg#phone"></use>
 								</svg>+420 123 456 789</a>
 						</li>
 						<li class="footer-item">
 
-							<a class="footer-contact-item" href="mailto:info@constantinvest.com"> <svg width="24"
-									height="24">
+							<a class="footer-contact-item link-hover" href="mailto:info@constantinvest.com"> <svg
+									width="24" height="24">
 									<use href="./assets/img/sprite.svg#email"></use>
 								</svg>info@constantinvest.com</a>
 						</li>
@@ -250,7 +287,8 @@
 				<p class="footer-text">Copyright 2021 Constant Invest</p>
 				<p class="company">vytvoril Shoptet | <img class="logo-miranda"
 						src="./assets/img/logo-miranda-media.png" width="23" height="19" alt="logo miranda media" />
-					MirandaMedia Group, s.r.o.</p>
+					<a class="link-hover" href="https://www.mirandamedia.cz/">MirandaMedia Group, s.r.o.</a>
+				</p>
 			</div>
 
 
@@ -295,7 +333,7 @@
 
 
 	</div>
-	</div>
+
 </body>
 
 </html>
