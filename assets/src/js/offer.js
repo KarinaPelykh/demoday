@@ -8,15 +8,15 @@ const images = [
     name: "Zlaté mince",
     type: "Investiční",
   },
-  {
-    img: "./assets/img/currency/coin@2x.avif",
-    name: "Zlaté slitky",
-    type: "Investiční",
-  },
+
   {
     img: "./assets/img/currency/gold_1@2x.avif",
     name: "Zlaté mince",
     type: "historické",
+  },  {
+    img: "./assets/img/currency/coin@2x.avif",
+    name: "Zlaté slitky",
+    type: "Investiční",
   },
   {
     img: "./assets/img/currency/hryvnia@2x.avif",
